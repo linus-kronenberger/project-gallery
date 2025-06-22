@@ -1,10 +1,19 @@
 import React from 'react';
-import HomePage from '../components/HomePage';
-function App() {
+
+import HomeNavbar from '../components/home/HomeNavbar';
+import HomePage from '../components/home/HomePage';
+import HomeFooter from '../components/home/HomeFooter';
+
+import '../app/styles/globals.css';
+function Home() {
   return (
-    <div>
+    <>
+      <HomeNavbar />
+      <hr/>
       <HomePage />
-    </div>
+      <hr/>
+      <HomeFooter />
+    </>
   );
 }
-export default App;
+export default Home;
