@@ -5,7 +5,7 @@ from flask_cors import CORS
 # flask --app term_solver.py run
 
 app = Flask(__name__)
-#cors = CORS(app, origins="http://localhost:3000")
+cors = CORS(app, origins="http://localhost:3000")
 
 app.secret_key = '12345678'
 
