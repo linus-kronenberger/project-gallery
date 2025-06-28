@@ -1,21 +1,20 @@
 from flask import Flask
 from flask import request
 
-# complete api handler
+# flask --app term_solver.py run
 
 app = Flask(__name__)
 
 app.secret_key = '12345678'
 
-@app.route('/solve')
+@app.route('/solve', methods=['POST'])
 def solveAPI():
-    term = request.args.get('term')
+    term = request.json['term']
     if not term:
         return "No term provided", 400
-
     try:
         result = solve_term(str(term))
-        return result
+        return str(result)
     except Exception as e:
         return str(e), 500
 
