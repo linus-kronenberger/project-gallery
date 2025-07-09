@@ -14,6 +14,7 @@ const HomePage = () => {
           <li><Link href="/projects/py/term_solver">Python Term Solver</Link></li>
           <li><Link href="">AI Hub</Link></li>
           <li><Link href="">Spring Fiori</Link></li>
+          <li><a href="/ui5/dist/index.html">UI 5 Project</a></li>
         </ul>
       </main>
     </>
