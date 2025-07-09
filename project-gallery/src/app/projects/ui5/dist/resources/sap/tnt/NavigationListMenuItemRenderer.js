@@ -1,0 +1,7 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2025 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/core/Renderer","sap/ui/util/defaultLinkTypes","sap/m/MenuItemRenderer","sap/tnt/NavigationListItem"],function(e,t,n,r){"use strict";const i=e.extend(n);i.apiVersion=2;i.render=function(e,t){const n=!!t._getVisibleItems().length;const r=t.getHref()&&t.getTarget()==="_blank";e.openStart("li",t);if(t.getHref()){e.class("sapTntNavMenuItemExternalLink")}this.renderAttributes(e,t);this.renderStyleClasses(e,t);this.renderInlineStyles(e,t);this.setAccessibilityAttributes(e,t);e.openEnd();if(t.getHref()){this._renderLinkTag(e,t)}this.renderIcon(e,t);this.renderText(e,t);if(n){this.renderSubmenuArrow(e,t)}else{this.renderShortcut(e,t);this.renderEndContent(e,t);this.renderSelectionMark(e,t)}if(r){const n=t._getExternalLinkIcon();e.renderControl(n)}if(t.getHref()){e.close("a")}e.close("li")};i._renderLinkTag=function(e,n){const i=n.getHref(),s=n.getTarget();e.openStart("a",`${n.getId()}-a`);const a=n.getTooltip_AsString()||n.getText();if(a){e.attr("title",a)}if(i){e.attr("href",i)}if(s){e.attr("target",s).attr("rel",t("",s))}if(i&&s==="_blank"){const t=r._getInvisibleText();e.attr("aria-describedby",t.getId())}e.openEnd()};return i},true);
+//# sourceMappingURL=NavigationListMenuItemRenderer.js.map

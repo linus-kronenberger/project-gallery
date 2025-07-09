@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["sap","ui","define","Button","MessageToast","text","press","show","placeAt"],"sources":["index-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CACb,eACA,sBACE,CAACC,EAAQC,KACX,aAEA,IAAID,EAAO,CACVE,KAAM,WACN,KAAAC,GACCF,EAAaG,KAAK,eACnB,IACEC,QAAQ","ignoreList":[]}
