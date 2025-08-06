@@ -2,5 +2,14 @@
   "_version": "1.65.0",
   "sap.app": {
     "id": "ui5.events"
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.uxap" : {}
+      }
+    }
   }
 }

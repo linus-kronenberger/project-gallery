@@ -1,8 +1,18 @@
-<mvc:View
+<mvc:View xmlns:uxap="sap.uxap" xmlns:cards="sap.f.cards"
    controllerName="ui5.events.controller.App"
    xmlns="sap.m"
-   xmlns:mvc="sap.ui.core.mvc">
-   <Button
-      text="Say Hello"
-      press=".onShowHello"/>
+   xmlns:m="sap.m"
+   xmlns:mvc="sap.ui.core.mvc"
+   xmlns:u="sap.uxap"
+   xmlns:core="sap.ui.core">
+
+
+
+    <Input placeholder="your username" />
+    <Input placeholder="your password" />
+    <Button
+      text="Login"
+      press=".onLogIn"/>
+
+    <core:Fragment fragmentName="ui5.events.view.fragments.ObjectPage" type="XML" />
 </mvc:View>
