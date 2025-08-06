@@ -1,30 +1,6 @@
 {
-  "_version": "1.58.0",
+  "_version": "1.65.0",
   "sap.app": {
-    "id": "ui5.app"
-  },
-  "sap.ui5": {
-		"rootView": {
-			"viewName": "sap.ui.vbm.sample.AnalyticMapBasic.Main",
-			"type": "XML",
-			"async": true
-		},
-		"dependencies": {
-			"libs": {
-				"sap.m": {},
-				"sap.ui.layout": {},
-				"sap.ui.vbm": {}
-			}
-		},
-		"config": {
-			"sample": {
-				"stretch": true,
-				"files": [
-					"Main.controller.js",
-					"Main.view.xml",
-					"manifest.json"
-				]
-			}
-		}
-	}
+    "id": "ui5.events"
+  }
 }

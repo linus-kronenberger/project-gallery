@@ -1,12 +1,11 @@
 {
-  "name": "ui5.quickstart",
+  "name": "ui5.events",
   "version": "1.0.0",
-  "description": "The UI5 quickstart tutorial",
+  "description": "My ui5 application",
   "scripts": {
-    "dev": "ui5 serve -o index.html",
-    "build" : "ui5 build --all"
+    "start": "ui5 serve -o index.html"
   },
   "devDependencies": {
-    "@ui5/cli": "^4.0.19"
+    "@ui5/cli": "^4.0.22"
   }
 }
