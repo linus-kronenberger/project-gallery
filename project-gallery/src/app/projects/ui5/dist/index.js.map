@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["sap","ui","define","XMLView","create","viewName","then","oView","placeAt"],"sources":["index-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,CACb,2BACGC,IACH,aAEAA,EAAQC,OAAO,CACdC,SAAU,wBACRC,KAAMC,GAAUA,EAAMC,QAAQ","ignoreList":[]}
